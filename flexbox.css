@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0 20px 30px 0;
+    line-height: 1.4;
+}
+
+.flex-container{
+
+    /* display: flex;
+    justify-content:space-around;
+    align-items: center; */
+
+    /*display: flex;
+    flex-wrap: wrap;*/
+
+
+    /*display: flex;
+    flex-wrap: nowrap;   */
+
+    
+    /* display: flex;
+    flex-wrap: wrap;   */
+
+    /* display: flex;
+    flex-wrap: wrap-reverse;    */
+
+
+    /*display:block;  */
+
+
+    /*display: flex; */
+
+
+    /*display: flex;
+    flex-direction: column; */
+
+
+    /*display: flex;
+    flex-direction: column-reverse;   */
+
+
+    /*display: flex;
+    flex-direction: row-reverse;   */
+
+
+
+
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 500px;
+    border: 2px solid darkblue;
+    /*  flex-wrap: wrap;    */
+    /*align-items: center;    */    /* maintain space  */
+    align-content: flex-start;      /*  flex-end , and more  */  /* This will not maintain space   */
+
+}
+
+
+.flex-item{
+    width: 75px;
+    height: 75px; 
+    border: 2px solid darkblue;
+    text-align: center;
+    font-size: 2en;
+    color: white;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+#flex-item-1{
+    /*    flex-basis: 200px;    */      /* This is the Max. size of an item , it can be small but not more than that of this     */
+    
+    /*   flex-grow: 2;      */
+    
+    /*  flex-shrink: 2;    */   /*This will shrink the item more fast than that of other  */
+    background-color: lightpink;
+
+    /* align-self: stretch; */
+
+
+}
+
+#flex-item-2{
+    /*    flex-grow: 3;  */         /* This will make the size of an item be larger than that of other   */
+    background-color: lightskyblue;
+}
+
+#flex-item-3{
+    background-color: lightgreen;
+    order: 5;           /*   Maximum the order that item will be at the end     */
+}
+
+#flex-item-4{
+    background-color: darkkhaki;
+}
+
+#flex-item-5{
+    background-color: lightcoral;
+}
